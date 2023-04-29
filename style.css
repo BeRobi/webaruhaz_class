@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+.kutyaKartya {
+  border: 1px solid blue;
+  width: 10rem;
+  flex: 0 0 calc(15% - 5px);
+  padding: 10px 25px;
+}
+
+.kutyaKartya p {
+  margin: auto;
+}
+
+.tablazat {
+  margin: 5rem;
+}
+
+.aria-sort {
+  border: 1px black solid;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px 25px;
+}
+
+.cella {
+  border: 1px black solid;
+  margin: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px 25px;
+}
+
+form {
+  margin: auto;
+  max-width: 30%;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(46, 44, 44);
+  padding: 15px;
+}
+
+form div {
+  padding: 3px;
+}
+
+form span {
+  color: rgb(238, 9, 9);
+}
+
+@media screen and (max-width: 925px) {
+  .container div {
+    flex: 0 0 calc(33% - 5px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container div {
+    flex: 0 0 calc(50% - 5px);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container div {
+    flex: 0 0 calc(100% - 5px);
+  }
+}
